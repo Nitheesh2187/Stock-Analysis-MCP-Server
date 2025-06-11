@@ -1,0 +1,12 @@
+[project]
+name = "Stock_MCP"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "feedparser>=6.0.11",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.9.2",
+    "yfinance>=0.2.61",
+]
