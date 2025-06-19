@@ -1,7 +1,7 @@
 [project]
-name = "Stock_MCP"
+name = "stock-mcp"
 version = "0.1.0"
-description = "Add your description here"
+description = "MCP server to get quote, fundamentals, news and analyse about any stock"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -10,3 +10,16 @@ dependencies = [
     "mcp[cli]>=1.9.2",
     "yfinance>=0.2.61",
 ]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+stock-mcp = "stock_mcp:main"
+
+[tool.ruff]
+select = ["E", "F", "B", "I"]
+ignore = []
+line-length = 100
