@@ -1,0 +1,20 @@
+FROM python:3.10-slim
+
+# set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends gcc
+
+# Copy project files
+COPY . /app
+
+# Install pip dependencies
+RUN python -m pip install --upgrade pip && \
+    pip install .
+
+# Expose any necessary ports if needed (e.g., 8080)
+EXPOSE 8080
+
+# Command to run MCP server
+CMD ["stock-mcp"]
