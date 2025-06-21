@@ -23,3 +23,6 @@ stock-mcp = "stock_mcp:main"
 select = ["E", "F", "B", "I"]
 ignore = []
 line-length = 100
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stock_mcp"]

@@ -18,7 +18,7 @@ A Model Context Protocol (MCP) server implementation for comprehensive Indian st
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/Nitheesh2187/Stock-Analysis-MCP-Server.git
 cd stock-analysis-mcp
 
 # Install using pip
